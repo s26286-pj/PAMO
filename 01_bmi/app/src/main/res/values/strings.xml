@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">bmi</string>
+    <string name="your_weight">Your weight [kg]</string>
+    <string name="your_height">Your height [cm]</string>
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_optimal">Optimal</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obesity">Obesity</string>
+</resources>
