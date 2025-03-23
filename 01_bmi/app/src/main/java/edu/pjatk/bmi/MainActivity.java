@@ -59,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
     private void setDescription() {
         if (bmi < 18.5) {
             bmiDescriptionTextView.setText(R.string.bmi_underweight);
-        } else if (bmi >= 18.5 && bmi < 25) {
+        } else if (bmi < 25) {
             bmiDescriptionTextView.setText(R.string.bmi_optimal);
-        } else if (bmi >= 25 && bmi < 30) {
+        } else if (bmi < 30) {
             bmiDescriptionTextView.setText(R.string.bmi_overweight);
         } else {
             bmiDescriptionTextView.setText(R.string.bmi_obesity);
