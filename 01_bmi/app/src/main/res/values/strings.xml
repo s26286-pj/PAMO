@@ -2,8 +2,27 @@
     <string name="app_name">bmi</string>
     <string name="your_weight">Your weight [kg]</string>
     <string name="your_height">Your height [cm]</string>
+    <string name="your_age">Your age [years]</string>
+    <string name="your_activity_level">Your activity level</string>
+    <string name="your_sex">Man/Woman</string>
     <string name="bmi_underweight">Underweight</string>
     <string name="bmi_optimal">Optimal</string>
     <string name="bmi_overweight">Overweight</string>
     <string name="bmi_obesity">Obesity</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_bmi">BMI</string>
+    <string name="title_daily_caloric_requirement">Daily Caloric Requirement</string>
+    <string-array name="activity_level_array">
+        <item>Sedentary (little/no exercise)</item>
+        <item>Light activity (1 to 3 days/week)</item>
+        <item>Moderate activity (3 to 5 days/week)</item>
+        <item>Very active (6 to 7 days/week)</item>
+        <item>Extra active (athletes, physical job)</item>
+    </string-array>
+    <string name="dish_1">A rich and creamy chicken alfredo pasta, with tender pieces of chicken and a smooth garlic butter sauce. Tossed with fettuccine noodles, topped with grated parmesan, and garnished with fresh parsley.</string>
+    <string name="dish_2">Grilled salmon fillets marinated in a citrus herb sauce, served with a side of roasted vegetables and quinoa. The salmon is perfectly cooked with a crispy skin, offering a delightful smoky flavor.</string>
+    <string name="dish_3">A fresh and vibrant Mediterranean salad, with cucumbers, tomatoes, olives, and red onions. Tossed with feta cheese and a zesty olive oil dressing, this salad is a perfect accompaniment to any meal.</string>
+    <string name="dish_4">A savory beef stew made with tender chunks of beef, carrots, potatoes, and onions simmered in a hearty broth. Seasoned with thyme and bay leaves, it’s a comforting dish for cold evenings.</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit diam accumsan felis sagittis, eu mattis sem malesuada. Vestibulum sodales enim quis finibus cursus. Nunc vel efficitur enim. Vivamus eget efficitur neque. Nunc eget leo nec felis finibus sodales. Morbi tincidunt blandit turpis ut fermentum. Mauris metus purus, posuere ut nunc non, gravida facilisis neque. Ut vitae tempus ipsum. Duis dictum velit quis elementum scelerisque. Morbi luctus ligula mauris. Donec ac tortor ut erat ullamcorper gravida at ac neque. Aliquam quis rhoncus nibh, a congue eros. Mauris quis justo nec turpis varius posuere. Aliquam scelerisque efficitur mauris a sodales.</string>
 </resources>
