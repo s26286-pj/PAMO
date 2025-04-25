@@ -25,7 +25,6 @@ import java.text.DecimalFormat;
 import edu.pjatk.bmi.R;
 
 public class DailyCaloricRequirementFragment extends Fragment {
-    private static final DecimalFormat df = new DecimalFormat("#.00");
 
     private int age = 0;
     private double weight = 0;
@@ -106,12 +105,9 @@ public class DailyCaloricRequirementFragment extends Fragment {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
     };
 
-    private final CompoundButton.OnCheckedChangeListener sexSwitchListener = new CompoundButton.OnCheckedChangeListener() {
-        @Override
-        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-            isWoman = isChecked;
-            calculateBMR();
-        }
+    private final CompoundButton.OnCheckedChangeListener sexSwitchListener = (buttonView, isChecked) -> {
+        isWoman = isChecked;
+        calculateBMR();
     };
 
     private final AdapterView.OnItemSelectedListener activityLevelSelectedListener = new AdapterView.OnItemSelectedListener() {

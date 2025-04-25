@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import java.text.DecimalFormat;
 
 import edu.pjatk.bmi.R;
+import edu.pjatk.bmi.util.BmiCalculator;
 
 public class BmiFragment extends Fragment {
 
@@ -47,24 +48,10 @@ public class BmiFragment extends Fragment {
         weightEditText.addTextChangedListener(weightEditTextWatcher);
     }
 
-    private void calculate() {
-        if (height > 0 && weight > 0) {
-            bmi = weight / (height * height);
-            bmiTextView.setText(df.format(bmi));
-            setDescription();
-        }
-    }
-
-    private void setDescription() {
-        if (bmi < 18.5) {
-            bmiDescriptionTextView.setText(R.string.bmi_underweight);
-        } else if (bmi < 25) {
-            bmiDescriptionTextView.setText(R.string.bmi_optimal);
-        } else if (bmi < 30) {
-            bmiDescriptionTextView.setText(R.string.bmi_overweight);
-        } else {
-            bmiDescriptionTextView.setText(R.string.bmi_obesity);
-        }
+    private void updateBmiDisplay() {
+        bmi = BmiCalculator.calculateBmi(weight, height);
+        bmiTextView.setText(df.format(bmi));
+        bmiDescriptionTextView.setText(BmiCalculator.getBmiCategory(bmi));
     }
 
     private final TextWatcher weightEditTextWatcher = new TextWatcher() {
@@ -75,7 +62,7 @@ public class BmiFragment extends Fragment {
             } catch (NumberFormatException e) {
                 weight = 0;
             }
-            calculate();
+            updateBmiDisplay();
         }
 
         @Override
@@ -93,7 +80,7 @@ public class BmiFragment extends Fragment {
             } catch (NumberFormatException e) {
                 height = 0;
             }
-            calculate();
+            updateBmiDisplay();
         }
 
         @Override
