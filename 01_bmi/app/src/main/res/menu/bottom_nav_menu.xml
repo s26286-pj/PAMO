@@ -16,4 +16,14 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_daily_caloric_requirement" />
 
+    <item
+        android:id="@+id/nav_shopping_list"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/shopping_list" />
+
+    <item
+        android:id="@+id/nav_bmi_chart"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/bmi_chart" />
+
 </menu>

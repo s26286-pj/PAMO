@@ -12,7 +12,9 @@
     <string name="title_activity_main2">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_bmi">BMI</string>
+    <string name="bmi_chart">Wykres Bmi</string>
     <string name="title_daily_caloric_requirement">Daily Caloric Requirement</string>
+    <string name="shopping_list">Shopping List</string>
     <string-array name="activity_level_array">
         <item>Sedentary (little/no exercise)</item>
         <item>Light activity (1 to 3 days/week)</item>

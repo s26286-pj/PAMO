@@ -22,4 +22,14 @@
         android:name="edu.pjatk.bmi.ui.dailyCaloricRequirement.DailyCaloricRequirementFragment"
         android:label="@string/title_daily_caloric_requirement"
         tools:layout="@layout/fragment_daily_caloric_requirement" />
+    <fragment
+        android:id="@+id/nav_shopping_list"
+        android:name="edu.pjatk.bmi.ui.shoppingList.ShoppingListFragment"
+        android:label="@string/shopping_list"
+        tools:layout="@layout/fragment_shopping_list" />
+    <fragment
+        android:id="@+id/nav_bmi_chart"
+        android:name="edu.pjatk.bmi.ui.chart.BmiChartFragment"
+        android:label="Wykres BMI"
+        tools:layout="@layout/fragment_bmi_chart" />
 </navigation>
